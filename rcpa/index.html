@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Explore PA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+    <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.css">
+<style>
+@media print {
+  .screen-only {
+        display: none;
+  }
+}
+</style>
+  </head>
+  <body>
+
+<div id="reset-weights-modal" class="ui modal">
+  <div class="header">Reset Weights</div>
+  <div class="content">
+    <p>Are you sure you want to reset all the weights to zero?</p>
+  </div>
+  <div class="actions">
+    <div class="ui approve button">Yes</div>
+    <div class="ui cancel button">Cancel</div>
+  </div>
+</div>
+
+    <div id="content"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+    <!-- For production
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>  
+    -->
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.js"></script>
+    <script src="rcpa-data.js"></script>
+    <script src="rcpa-graph.js"></script>
+    <script src="explore.js"></script>
+  </body>
+</html>
+ 
